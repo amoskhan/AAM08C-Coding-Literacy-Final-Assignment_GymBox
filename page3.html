@@ -1,63 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <script src="https://kit.fontawesome.com/18f9c532f6.js" crossorigin="anonymous"></script>
-
-    <div id="navbar">
-    
-    <img src="gymboxlogo.jpg" style= "width: 130px; height: 130px;" alt="gymboxlogo.jpg">
-    <div id="navbar-right">
-    <a href="index.html" class="fa-solid fa-house-chimney fa-lg"> Home </a>
-    <a href="page2.html" class="fa-solid fa-dumbbell"> Facilities </a>
-    <a class ="active" href="page3.html" class="fa-solid fa-address-book fa-lg"> Contact </a>
-    <a href="page4.html" class="fa-solid fa-dollar-sign"> Prices </a>
-
-    <script>
-      // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-          document.getElementById("navbar").style.padding = "30px 10px";
-          document.getElementById("logo").style.fontSize = "25px";
-        } else {
-          document.getElementById("navbar").style.padding = "40px 10px";
-          document.getElementById("logo").style.fontSize = "35px";
-        }
+  <script src="https://kit.fontawesome.com/18f9c532f6.js" crossorigin="anonymous"></script>
+  <div id="navbar">
+    <div class="navbar-container">
+      <img id="logo" src="images/gymboxlogo.jpg" style="width: 130px; height: 130px;" alt="gymboxlogo.jpg">
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><i class="fa-solid fa-house-chimney"></i> Home</a>
+        </li>
+        <li>
+          <a href="page2.html"><i class="fa-solid fa-dumbbell"></i> Facilities</a>
+        </li>
+        <li>
+          <a href="page3.html"><i class="fa-solid fa-address-book"></i> Contact</a>
+        </li>
+        <li>
+          <a href="page4.html"><i class="fa-solid fa-dollar-sign"></i> Prices</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body> 
+  <script>
+    // Optional: Navbar shrink on scroll
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.padding = "30px 10px";
+        document.getElementById("logo").style.width = "90px";
+        document.getElementById("logo").style.height = "90px";
+      } else {
+        document.getElementById("navbar").style.padding = "40px 10px";
+        document.getElementById("logo").style.width = "130px";
+        document.getElementById("logo").style.height = "130px";
       }
-      </script>
-    </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>   
-
-<h1 class="large-font" style="color:rgb(206, 250, 61); text-align: center;"><b>Find Us</b></h1>
+    }
+  </script>
 
 <!--  -->
-
-
-
 <style>
   html {
     box-sizing: border-box;
@@ -117,7 +103,7 @@
   <div class="row">
     <div class="column">
       <div class="card">
-        <img src="gymboxconventgarden.jpg" alt="gymboxconventgarden.jpg" style="width:100%">
+        <img src="images/gymboxconventgarden.jpg" alt="gymboxconventgarden.jpg" style="width:100%">
         <div class="container">
           <h2 style="color:rgb(255, 255, 255); text-align:center">Gymbox Covent Garden</h2>
           <p style="color:rgb(255, 255, 255); text-align:center">
@@ -135,7 +121,7 @@
   
     <div class="column">
       <div class="card">
-        <img src="gymboxbank.jpg" alt="gymboxbank.jpg" style="width:100%">
+        <img src="/images/gymboxbank.jpg" alt="gymboxbank.jpg" style="width:100%">
         <div class="container">
           <h2 style="color:rgb(255, 255, 255); text-align:center" >Gymbox Bank</h2>
           <p style="color:rgb(255, 255, 255); text-align:center">
@@ -151,7 +137,7 @@
     
     <div class="column">
       <div class="card">
-        <img src="gymboxoldstreet.jpg" alt="gymboxoldstreet.jpg" style="width:100%">
+        <img src="images/gymboxoldstreet.jpg" alt="gymboxoldstreet.jpg" style="width:100%">
         <div class="container">
           <h2 style="color:rgb(255, 255, 255); text-align:center">Gymbox Old Street</h2>
           <p style="color:rgb(255, 255, 255); text-align:center">Located in: St Martin's Lane Hotel London <br>
@@ -160,18 +146,14 @@
           </p>
           <a href="https://www.gymbox.com/gyms/old-street" target="_blank">
             <button class="button">Click here to find out more</button></a>  
-            
-
         </div>
       </div>
     </div>
   </div>
-  <hr>
-
   <h3>
     <p style="color:rgb(206, 250, 61); text-align:center; font-size: 30px">
       Opening Hours: Daily from <b><u>6am to 11pm</u></b> <br>      
-      
+<hr>
   </h3>
   <h4 style="text-align:center; font-size: 30px; color: rgb(206, 250, 61)">
     Locate Gymbox
