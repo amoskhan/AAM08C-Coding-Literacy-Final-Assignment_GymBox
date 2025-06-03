@@ -5,8 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
+<link href = "dist/css/lightbox.css" rel = "stylesheet">
 </head>
 
+<!-- <body onload = "pickImage()"> -->
 <body>
   <script src="https://kit.fontawesome.com/18f9c532f6.js" crossorigin="anonymous"></script>
   <div id="navbar">
@@ -66,27 +68,30 @@
   </h2>
 <div class="row">
   <div class="column">
-    <img src="images/jingzhi.jpa.jpg" alt="jingzhi.jpg" style="width:100%">
+    <a href="images/jingzhi.jpa.jpg" data-lightbox="team"><img src="images/jingzhi.jpa.jpg" alt="jingzhi.jpg" style="width:100%"></a>
     <h2 style="color:rgb(255, 255, 255)">Jing Zhi Chua</h2>
-    <p style="color:rgb(255, 255, 255)">Founder/Strength and conditioning coach</p>
-  </div>
+    <p style="color:rgb(255, 255, 255)">Founder/Strength and conditioning coach</p>  </div>
   <div class="column">
-    <img src="images/angela.jpg" alt="angela.jpg" style="width:100%">
+    <a href="images/angela.jpg" data-lightbox="team"><img src="images/angela.jpg" alt="angela.jpg" style="width:100%"></a>
     <h2 style="color:rgb(255, 255, 255)">Cheval Lim</h2>
     <p style="color:rgb(255, 255, 255)">Online coach/Digital marketing lead</p>
   </div>
   <div class="column">
-    <img src="images/patsysoh.jpg" alt="patsysoh.jpg" style="width:97%">
+    <a href="images/patsysoh.jpg" data-lightbox="team"><img src="images/patsysoh.jpg" alt="patsysoh.jpg" style="width:97%"></a>
     <h2 style="color:rgb(255, 255, 255)">Patsy Soh</h2>
     <p style="color:rgb(255, 255, 255)">Dietitian/Strength and conditioning coach</p>
   </div>
 </div>
 
+  <!-- <img id = "header_img" src = "" alt = "Waiting for an image"> -->
+
 
 <p style=color:white;text-align:center;font-size:20px;margin-top:100px;margin-bottom:0px;>Copyright &copy; 2022 GYMBOX</p>
 <p style=color:white;text-align:center;font-size:20px;margin-top:0px;>All Rights Reserved</p>
 <br>
-  
+<!--   
+<script src = "/js/script.js"></script> -->
 
+<script src = "dist/js/lightbox-plus-jquery.js"></script>
 </body>
 </html> 

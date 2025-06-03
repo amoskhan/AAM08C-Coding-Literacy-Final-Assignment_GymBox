@@ -231,3 +231,48 @@ nav li {
 .dot-facility.active {
   background-color: #4fa1d3;
 }
+
+
+#image {
+  display: flex;
+  flex-direction: column;           /* Stack image and text vertically */
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 10;
+  min-width: 320px;
+  min-height: 200px;
+  max-width: 90vw;
+  max-height: 60vh;
+  border: 5px solid black;
+  margin: 0 auto 25px auto;
+  background-color: #baa401;
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #00f7ff;
+  text-align: center;
+  font-size: 150%;
+  transition: width 0.3s, height 0.3s;
+  padding-bottom: 16px;             /* Space below image for text */
+}
+
+.preview{
+		width:10%;
+		margin-left:17%;
+    border: 10px solid black;
+}
+img{
+		width:95%;
+}
+
+/* ...existing code... */
+.card img {
+  width: 320px;
+  height: 200px;
+  border-radius: 12px 12px 0 0;
+  display: block;
+  object-fit: contain; /* Change from cover to contain */
+  background: #222;    /* Optional: fallback background */
+  margin: 0 auto;
+}
