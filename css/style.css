@@ -232,7 +232,6 @@ nav li {
   background-color: #4fa1d3;
 }
 
-
 #image {
   display: flex;
   flex-direction: column;           /* Stack image and text vertically */
@@ -268,11 +267,77 @@ img{
 
 /* ...existing code... */
 .card img {
-  width: 320px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   border-radius: 12px 12px 0 0;
   display: block;
   object-fit: contain; /* Change from cover to contain */
   background: #222;    /* Optional: fallback background */
   margin: 0 auto;
+}
+
+
+/* Responsive styles for mobile devices */
+@media (max-width: 600px) {
+  body {
+    font-size: 30px;
+  }
+  .row {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+  .column {
+    max-width: 98vw;
+    padding: 0 1vw;
+  }
+  #navbar .navbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #navbar a {
+    padding: 0px;
+    font-size: 18px;
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  #logo {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  #image {
+    min-width: 90vw;
+    max-width: 100vw;
+    min-height: 120px;
+    font-size: 110%;
+  }
+  .card img,
+  .column img,
+  img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 98vw;
+  }
+  .preview {
+    width: 90vw !important;
+    margin-left: 0 !important;
+    border-width: 5px;
+  }
+
+  /* Responsive table for prices page */
+@media (max-width: 600px) {
+  .table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  table.center {
+    width: 600px; /* min width for table, so it scrolls on small screens */
+  }
+  table.center th, table.center td {
+    font-size: 18px !important;
+    padding: 8px 4px;
+  }
+}
 }
